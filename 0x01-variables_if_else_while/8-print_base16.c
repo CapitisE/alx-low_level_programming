@@ -16,7 +16,7 @@ int main(void)
 	for (lower16 = '0'; lower16 <= '9'; lower16++)
 	putchar(lower16);
 
-	for (upper16 = 'a'; upper16 <= 'e'; upper16++)
+	for (upper16 = 'a'; upper16 <= 'f'; upper16++)
 	putchar(upper16);
 	putchar('\n');
 

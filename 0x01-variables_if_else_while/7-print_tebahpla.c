@@ -12,10 +12,8 @@ int main(void)
 {
 	char reverselower;
 
-	for (reverselower = 'z'; reverselower <= 'a'; reverselower--)
-	{
+	for (reverselower = 'z'; reverselower >= 'a'; reverselower--)
 	putchar (reverselower);
-	}
 	putchar ('\n');
 	return (0);
 

@@ -12,7 +12,7 @@ int main(void)
 {
 	char reverselower;
 
-	for (reverselower = 'a'; reverselower <= 'z'; reverselower--)
+	for (reverselower = 'z'; reverselower <= 'a'; reverselower--)
 	{
 	putchar (reverselower);
 	}

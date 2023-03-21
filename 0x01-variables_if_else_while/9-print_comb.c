@@ -14,6 +14,7 @@ int main(void)
 
 	for (combination = '0'; combination <= '9'; combination++)
 	{
+	putchar(combination);
 	if (combination != '9')
 	{
 	putchar(',');

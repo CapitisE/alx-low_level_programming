@@ -41,4 +41,6 @@ int main(void)
 	f2_half1 = half1;
 	f2_half2 = half2;
 	}
+	print('\n');
+	return (0);
 }

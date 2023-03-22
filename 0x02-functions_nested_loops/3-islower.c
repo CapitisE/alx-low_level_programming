@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * int _islower - Program to check for lowercase character
- *
- * @c: Serves a protype
- * 
+ * _islower - Program to check for lowercase character
+ * @c: Serves a protype 
  * Return: 1 (if int c is lowercase), 0 (in all other conditions)
  *
  */

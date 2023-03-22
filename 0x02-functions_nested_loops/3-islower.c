@@ -2,7 +2,7 @@
 
 /**
  * _islower - Program to check for lowercase character
- * @c: Serves a protype 
+ * @c: Serves a protype
  * Return: 1 (if int c is lowercase), 0 (in all other conditions)
  *
  */

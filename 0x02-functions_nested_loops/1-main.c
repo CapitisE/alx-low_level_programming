@@ -2,7 +2,7 @@
 
 /**
  * main - Check the code
- * Return: 0 (Successful)
+ * Return: Always 0 (Successful)
  *
  */
 

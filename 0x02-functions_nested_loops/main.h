@@ -1,6 +1,12 @@
 #ifndef main_h
 #define main_h
 
+/**
+ * main - Program to list out all helper functions.
+ *
+ * Return: N/A
+ */
+
 int _putchar(char);
 void print_alphabet(void);
 void print_alphabet_x10(void);

@@ -2,8 +2,8 @@
 
 /**
  * main - Program to print the alphabet in lowercase
+ * 
  * Return: Always 0 (Successful)
- *
  */
 
 void print_alphabet(void)

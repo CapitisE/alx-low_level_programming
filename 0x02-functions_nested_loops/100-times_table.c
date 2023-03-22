@@ -3,14 +3,14 @@
 /**
  * print_times_table - Program to print the n times table
  * @n: Prototype for program
- * Return: nothing for n > 15 || n < 0, nothing otherwise
+ * Return: nothing for n > 15 && n < 0, nothing otherwise
  */
 
 void print_times_table(int n)
 {
 	int number, multiple, product;
 
-	if (n >= 0 || n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 	for (number = 0; number <= n; number++)
 	{

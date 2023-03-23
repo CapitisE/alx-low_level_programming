@@ -11,7 +11,7 @@ void print_number(int n)
 {
 	unsigned int perl = n;
 
-	if (n > 0)
+	if (n < 0)
 	{
 	n *= -1;
 	perl = n;

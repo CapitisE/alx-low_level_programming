@@ -4,6 +4,7 @@
 /**
  * print_number : Function to print integers
  * @n: Protoype integer
+ *
  * Return: Nothing
  *
  */

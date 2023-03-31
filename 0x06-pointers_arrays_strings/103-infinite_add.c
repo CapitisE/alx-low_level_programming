@@ -42,13 +42,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int val1 = 0, val2 = 0, temp_tot = 0;
 
 	while (*(n1 + i) != '\0')
-	{
 		i++;
-	}
 	while (*(n2 + j) != '\0')
-	{
 		j++;
-	}
 	i--;
 	j--;
 
@@ -73,8 +69,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			return (0);
 		*(r + digits) = (temp_tot % 10) + '0';
 		digits++;
-		j--;
 		i--;
+		j--;
 	}
 	if (digits == size_r)
 		return (0);

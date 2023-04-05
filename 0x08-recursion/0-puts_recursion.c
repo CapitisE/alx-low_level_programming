@@ -1,10 +1,14 @@
+/**
+ * File: 0-puts_recursion.c
+ * Auth: Access
+ */
+
 #include "main.h"
 
 /**
  * _puts_recursion - Function to print a string, followed by a new line
  * @s: String
  *
- * Return: 0 (Successful)
  *
  */
 

@@ -1,11 +1,12 @@
-#include <stdlib>
+#include "main.h"
 #include <unistd.h>
 
 /**
- * _putchar : Function to print output char c
+ * _putchar - Function to print output char c
  * @c: Character to print
  *
  * Return: 1 (Successful)
+ * Error Prompt: -1 (Fail)
  */
 
 int _putchar(char c)

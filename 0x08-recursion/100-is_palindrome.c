@@ -38,7 +38,7 @@ int _palindrome_check(int i, int l, char *s)
 		else
 			return (1);
 	}
-	return (1);
+	return (0);
 }
 
 /**

@@ -9,9 +9,14 @@
 
 int _strlen(char *s)
 {
-	if (*s == '\0')
-		return (0);
-	return (1 * _strlen(s + 1));
+	int length = 0;
+
+	if (*(s + length))
+	{
+		length ++;
+		length += _strlen(s + length);
+	}
+	return (length);
 }
 
 
@@ -51,5 +56,4 @@ int _palindrome_check(int i, int l, char *s)
 int is_palindrome(char *s)
 {
 	return (_palindrome_check(0, _strlen(s) - 1, s));
-	return (0);
 }

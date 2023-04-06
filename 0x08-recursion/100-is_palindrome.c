@@ -28,11 +28,16 @@ int _strlen(char *s)
 int _palindrome_check(int i, int l, char *s)
 {
 	if (l > 0)
-		return (_palindrome_check(i + 1, l - 1, s));
-	else if (s[i] != s[l])
-		return (0);
-	else
-		return (1);
+	{
+		if (s[i] == s[l])
+		{
+			return (_palindrome_check(i + 1, l - 1, s));
+		}
+		else if (s[i] != s[l])
+			return (0);
+		else
+			return (1);
+	}
 	return (1);
 }
 

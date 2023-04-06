@@ -2,20 +2,20 @@
 
 /**
  * helper_function - Function to find square root
- * @check: Given number
+ * @n: Given number
  * @rexist: Root for testing
  *
  * Return: -1 (for no natural root)
  */
 
-int helper_function(int check, int rexist)
+int helper_function(int n, int rexist)
 {
-	if (check * check == rexist)
-		return (check);
-	else if (check * check > rexist)
+	if (n * n == rexist)
+		return (n);
+	else if (n * n > rexist)
 		return (-1);
 	else
-		return (1 * helper_function(check + 1, rexist));
+		return (1 * helper_function(n + 1, rexist));
 }
 
 /**

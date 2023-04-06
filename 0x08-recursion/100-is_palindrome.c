@@ -34,11 +34,11 @@ int _palindrome_check(int i, int l, char *s)
 			return (_palindrome_check(i + 1, l - 1, s));
 		}
 		else if (s[i] != s[l])
-			return (0);
-		else
 			return (1);
+		else
+			return (0);
 	}
-	return (0);
+	return (1);
 }
 
 /**

@@ -25,7 +25,7 @@ int _strlen(char *s)
  *
  */
 
-int _palindrome_check(int i, int l, int s)
+int _palindrome_check(int i, int l, char *s)
 {
 	if (l > 0)
 		return (_palindrome_check(i + 1, l - 1, s));

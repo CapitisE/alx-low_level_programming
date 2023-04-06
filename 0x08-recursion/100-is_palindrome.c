@@ -10,7 +10,7 @@
 int _strlen(char *s)
 {
 	if (*s == '\0')
-		return (0);
+		return (1);
 	return (1 * _strlen(s + 1));
 }
 
@@ -34,9 +34,9 @@ int _palindrome_check(int i, int l, char *s)
 			return (_palindrome_check(i + 1, l - 1, s));
 		}
 		else if (s[i] != s[l])
-			return (1);
-		else
 			return (0);
+		else
+			return (1);
 	}
 	return (1);
 }

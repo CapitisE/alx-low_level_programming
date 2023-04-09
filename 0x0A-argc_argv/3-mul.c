@@ -22,6 +22,9 @@ int main(int argc, char *argv[])
 		printf("%d\n", num1 * num2);
 		return (0);
 	}
-	printf("Error\n");
-	return (1);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }

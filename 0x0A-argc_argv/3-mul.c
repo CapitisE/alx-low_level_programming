@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * atoi - function to convert string to integer
+ * _atoi - function to convert string to integer
  * @s: String
  * Return: Integer
  */
 
-int atoi(char *s)
+int _atoi(char *s)
 {
 	int a = 0, b = 0, c = 0, length = 0, x = 0, i = 0;
 
@@ -15,7 +15,7 @@ int atoi(char *s)
 		length++;
 	while (a < length && x == 0)
 	{
-		if (s[a] == '.')
+		if (s[a] == ',')
 			++b;
 		if (s[a] >= '0' && s[a] <= '9')
 		{
@@ -53,8 +53,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[2]);
+		num1 = _atoi(argv[1]);
+		num2 = _atoi(argv[2]);
 		printf("%d\n", num1 * num2);
 		return (0);
 }

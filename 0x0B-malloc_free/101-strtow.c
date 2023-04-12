@@ -16,10 +16,15 @@ int count(char *s)
 
 	for (len = 0; s[len] != '\0'; len++)
 	{
-		num = 0;
-		if (num == 0)
+		if (s[len] == ' ')
+		{
+			num = 0;
+		}
+		else
+			if (num == 0)
 		{
 			num = 1;
+			word++;
 		}
 	}
 	return (word);

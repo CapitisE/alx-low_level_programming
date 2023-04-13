@@ -103,5 +103,5 @@ int main(int argc, char *argv[])
 		_putchar('0');
 	_putchar('\n');
 	free(ans);
-		return (0);
+	return (0);
 }

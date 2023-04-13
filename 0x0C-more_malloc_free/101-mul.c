@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #define ERR_MSG "Error"
 
 /**
@@ -32,13 +31,13 @@ int is_digit(char *s)
  */
 int _strlen(char *s)
 {
-	int i = 0;
+	int a = 0;
 
-	while (s[i] != '\0')
+	while (s[a] != '\0')
 	{
-		i++;
+		a++;
 	}
-	return (i);
+	return (a);
 }
 
 /**
@@ -85,7 +84,7 @@ int main(int argc, char *argv[])
 		for (length2 = _strlen(b) - 1; length2 >= 0; length2--)
 		{
 			digit2 = b[length2] - '0';
-			cart += ans[length1 + length2 + 1] + (digit1 + digit2);
+			cart += ans[length1 + length2 + 1] + (digit1 * digit2);
 			ans[length1 + length2 + 1] = cart % 10;
 			cart /= 10;
 		}

@@ -42,10 +42,10 @@ int _strlen(char *s)
 }
 
 /**
- * error - Function to return error for function main
+ * errors - Function to return error for function main
  */
 
-void error(void)
+void errors(void)
 {
 	printf("Error\n");
 	exit(98);
@@ -68,9 +68,9 @@ int main(int argc, char *argv[])
 	a = argv[1];
 	b = argv[2];
 	if (argc != 3 || !is_digit(a) || !is_digit(b))
-		error();
-	length1 = strlen(a);
-	length2 = strlen(b);
+		errors();
+	length1 = _strlen(a);
+	length2 = _strlen(b);
 	length = length1 + length2 + 1;
 	ans = malloc(sizeof(int) * length);
 	if (!ans)

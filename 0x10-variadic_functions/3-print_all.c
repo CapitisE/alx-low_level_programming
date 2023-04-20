@@ -1,13 +1,11 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
- * print_all - Function to print anyhting
- * @format: A list of types of arguments passed to the function
- * @...: Number of arguments to be passed
+ * print_all - prints anything
+ * @format: list of types of arguments passed to the function
  */
-
 void print_all(const char * const format, ...)
 {
 	int i = 0;
@@ -41,10 +39,12 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			sep = ",";
+			sep = ", ";
 			i++;
 		}
 	}
+
 	printf("\n");
 	va_end(list);
 }
+

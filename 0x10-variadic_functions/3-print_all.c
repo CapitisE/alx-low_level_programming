@@ -5,12 +5,14 @@
 /**
  * print_all - Function to print anyhting
  * @format: A list of types of arguments passed to the function
+ * @...: Number of arguments to be passed
  */
 
 void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
+
 	va_list list;
 
 	va_start(list, format);

@@ -8,6 +8,9 @@
  * @n: Number of stings to be passed to the function
  * @...: Number of stings to be printed
  *
+ * Description: function will NOT print if separator is NULL,
+ * It will print (nil), if one of the strings is NULL
+ *
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -16,6 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 	unsigned int index;
 
+	va_start(str, n);
 	for (index = 0; index < n; index++)
 	{
 		s = va_arg(str, char *);

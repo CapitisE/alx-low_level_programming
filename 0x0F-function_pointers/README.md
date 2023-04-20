@@ -1,1 +1,1 @@
-Readme on C function pointers
+Readme on function pointers
